@@ -4,7 +4,7 @@ import { Component1Component } from './component1/component1.component';
 
 const routes: Routes = [
   {path:'component1',component:Component1Component},
-  {path:'',redirectTo:'component1',pathMatch:'full'},
+  {path:'',redirectTo:'navigator',pathMatch:'full'},
   {path:'config',loadChildren:'../configuration/configuration.module#ConfigurationModule'},
   {path:'navigator',loadChildren:'../material-navigator/material-navigator.module#MaterialNavigatorModule'}
 ];
